@@ -32,22 +32,59 @@ body {
     text-align: center;
 }
 
-
-
 .valerias-presentation p{
     text-align: center;
+    color: white;
 }
 
 #facts {
     margin-top: 20px;
 }
 
-.fact-card {
+.fact-card-container {
+    border: none;
     margin-top: 20px;
     width: 90%;
-    height: 80px;
+    height: 90px;
     background-color: rgba(34, 33, 33, 0.5);
     border-radius: 20px;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.fact-card {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.fact-card-description {
+    margin: 0;
+    width: 50%;
+}
+
+.fact-card-description h2 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.fact-card-description p {
+    margin-top: 6px;
+    text-align: center;
+}
+
+.fact-card img {
+    height: 70px;
 }

@@ -41,6 +41,26 @@ body {
     margin-top: 20px;
 }
 
+.grow {
+	display: inline-block;
+	transition-duration: 0.3s; /* Reemplaza $defaultDuration con el valor deseado */
+	transition-property: transform;
+
+	/* hideTapHighlightColor */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	/* hardwareAccel */
+	transform: translateZ(0);
+
+	/* improveAntiAlias */
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.grow:hover {
+	transform: scale(1.03);
+}
+
+
 .fact-card-container {
     border: none;
     margin-top: 20px;

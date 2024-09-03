@@ -1,0 +1,98 @@
+:root {
+    background: linear-gradient(to bottom right, rgb(217, 107, 250), rgb(255, 142, 187));
+    --text-color: #000000;
+    --accent-color: rgb(104, 104, 104, 0.4);
+}
+
+body.dark-theme {
+    background: linear-gradient(to bottom right, rgb(188, 0, 192), rgb(207, 0, 149));
+    --text-color: #ffffff;
+    --accent-color: rgb(59, 58, 59, 0.4);
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+  
+
+header {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+header {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+form h1{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+form button {
+    background-color: #8b4caf;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  form button:hover {
+    background-color: #7a43aa;
+  }
+
+
+h1 {
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav button img {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+}

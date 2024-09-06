@@ -1,12 +1,22 @@
 .serif-font {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-style: normal;
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
 }
 
 .montserrat-font {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
 }
 
 #valerias-summary {
@@ -25,13 +35,6 @@ body {
     border-radius: 20px;
 }
 
-.valerias-name h1{
-    color: white;
-    font-size: 50px;
-    margin: 0;
-    text-align: center;
-}
-
 .valerias-presentation p{
     text-align: center;
     color: white;
@@ -43,7 +46,7 @@ body {
 
 .grow {
 	display: inline-block;
-	transition-duration: 0.3s; /* Reemplaza $defaultDuration con el valor deseado */
+	transition-duration: 0.3s;
 	transition-property: transform;
 
 	/* hideTapHighlightColor */
@@ -107,4 +110,81 @@ body {
 
 .fact-card img {
     height: 70px;
+}
+
+#valerias-about-me {
+    margin-top: 100px;
+}
+
+#about-me-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin: 30px 0 15px 0;
+}
+
+.info-card-container {
+    background-color: rgba(34, 33, 33, 0.5);
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.info-card img {
+    width: 70%;
+}
+
+.info-card p {
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+@media (min-width: 1300px) {
+    .serif-font {
+        font-size: 90px;
+    }
+
+    #vale-img {
+        width: 500px;
+    }
+
+    .valerias-presentation {
+        font-size: 25px;
+    }
+
+    .fact-card-container {
+        height: 180px;
+    }
+
+    .fact-card img {
+        height: 160px;
+    }
+
+    .fact-card-description h2 {
+        font-size: 25px;
+    }
+    
+    .fact-card-description p {
+        font-size: 25px;
+    }
+
+    .info-card-container {
+        width: 450px;
+        height: 550px;
+    }
 }

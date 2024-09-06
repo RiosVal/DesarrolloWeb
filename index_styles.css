@@ -1,13 +1,25 @@
-body,
-html {
+* {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(26, 15, 56);
 }
 
 nav {
-    padding: 10px;
-    background-color: #f0f0f0;
-    /* Color de fondo del nav, opcional */
+    background-color: #f8f9fa; /* Puedes ajustar el color de fondo del nav si lo deseas */
+    padding: 1rem;
+}
+
+.main {
+    background-image: url("https://img.freepik.com/foto-gratis/petalo-belleza-margarita-verano-cerca-purpura-al-aire-libre-ia-generativa_188544-8633.jpg"); /* Asegúrate de colocar la ruta correcta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 80%;
 }

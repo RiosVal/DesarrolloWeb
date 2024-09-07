@@ -1,0 +1,233 @@
+:root {
+    background: linear-gradient(to bottom right, rgb(255, 188, 229), rgb(248, 117, 170));
+    --text-color: #000000;
+    --accent-color: rgb(104, 104, 104, 0.4);
+}
+
+body.dark-theme {
+    background: linear-gradient(to bottom right, rgb(138, 15, 187), rgb(198, 133, 252));
+    --text-color: #ffffff;
+    --accent-color: rgb(59, 58, 59, 0.4);
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom right, #e6829c, #a083e6) no-repeat fixed;
+    height: 100%;
+
+}
+
+
+
+
+
+header {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+header {
+   
+    color: var(--text-color);
+}
+
+form button {
+    background-color: #8b4caf;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  form button:hover {
+    background-color: #7a43aa;
+  }
+
+
+/* botón IMPORTANTE */
+  nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav button img {
+    width: 34px;
+    height: 34px;
+}
+
+
+
+
+
+.serif-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#alejandras-summary {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 30px 50px;
+}
+
+
+#maleja-img {
+    border-radius: 20px;
+}
+
+
+.alejandas-name h1{
+    /* color: white; */
+    color: var(--text-color);
+    font-size: 80px;
+    margin: 0;
+    text-align: center;
+}
+
+.alejas-presentation p{
+    text-align: center;
+    /* color: white; */
+    color: var(--text-color);
+}
+
+#facts {
+    margin-top: 20px;
+}
+
+.grow {
+	display: inline-block;
+	transition-duration: 0.3s; /* Reemplaza $defaultDuration con el valor deseado */
+	transition-property: transform;
+
+	/* hideTapHighlightColor */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	/* hardwareAccel */
+	transform: translateZ(0);
+
+	/* improveAntiAlias */
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.grow:hover {
+	transform: scale(1.03);
+}
+
+
+.fact-card-container {
+    border: none;
+    margin-top: 20px;
+    width: 90%;
+    height: 90px;
+    background-color: rgba(34, 33, 33, 0.5);
+    border-radius: 20px;
+    color: white;
+    /* color: var(--text-color); */
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.fact-card {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.fact-card-description {
+    margin: 0;
+    width: 50%;
+}
+
+.fact-card-description h2 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.fact-card-description p {
+    margin-top: 6px;
+    text-align: center;
+}
+
+
+.fact-card img {
+    height: 70px;
+}
+
+/*
+form h1{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+
+h1 {
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav button img {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+} */

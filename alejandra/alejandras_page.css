@@ -60,6 +60,11 @@ form button {
     background: none;
     border: none;
     cursor: pointer;
+    padding: 5px; /* Añadido padding para que tenga algo de espacio alrededor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 nav button img {
@@ -98,7 +103,7 @@ nav button img {
 .alejandas-name h1{
     /* color: white; */
     color: var(--text-color);
-    font-size: 80px;
+    font-size: 60px;
     margin: 0;
     text-align: center;
 }
@@ -181,6 +186,13 @@ nav button img {
 
 .fact-card img {
     height: 70px;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
 }
 
 /*

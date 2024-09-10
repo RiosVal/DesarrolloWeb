@@ -1,11 +1,11 @@
 :root {
-    background: linear-gradient(to bottom right, rgb(217, 107, 250), rgb(255, 142, 187));
+    background: linear-gradient(to bottom right, rgb(255, 188, 229), rgb(248, 117, 170));
     --text-color: #000000;
     --accent-color: rgb(104, 104, 104, 0.4);
 }
 
 body.dark-theme {
-    background: linear-gradient(to bottom right, rgb(188, 0, 192), rgb(207, 0, 149));
+    background: linear-gradient(to bottom right, rgb(138, 15, 187), rgb(198, 133, 252));
     --text-color: #ffffff;
     --accent-color: rgb(59, 58, 59, 0.4);
 }
@@ -15,11 +15,81 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom right, #e6829c, #a083e6) no-repeat fixed;
+    height: 100%;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
 
 
 
-  
+/* videos */
+/* Estilos generales de la sección */
+.project-box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Diseño del video */
+.custom-video {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el video */
+.custom-video:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más grande */
+    filter: brightness(1.2); /* Añade brillo */
+}
+
+/* Estilos opcionales para el texto */
+.project-box p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+
+
+
+/* botón de home :D */
+
+
+#home-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px; /* Añadido padding para que tenga algo de espacio alrededor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#home-button:hover {
+    background-color: #7a43aa; /* Color al pasar el mouse */
+}
+
+#home-button img {
+    width: 24px;
+    height: 24px;
+}
+
+
 
 header {
     background-color: var(--accent-color);
@@ -28,21 +98,28 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+
+}
+
+header {
+   
+    color: var(--text-color);
+}
+
+nav a {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px; /* Añadido padding para que tenga algo de espacio alrededor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
     
 }
 
-header {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-}
-
-form h1{
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+nav a:hover{
+  color: #00b7ff;
 }
 
 form button {
@@ -54,10 +131,303 @@ form button {
     cursor: pointer;
     font-size: 1em;
   }
-  
+
   form button:hover {
     background-color: #7a43aa;
   }
+
+
+/* botón IMPORTANTE */
+  nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav button img {
+    width: 34px;
+    height: 34px;
+}
+
+
+
+
+.serif-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#alejandras-summary {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 30px 50px;
+}
+
+
+#maleja-img {
+    border-radius: 20px;
+}
+
+
+.alejandas-name h1{
+    /* color: white; */
+    color: var(--text-color);
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+}
+
+.alejas-presentation p{
+    text-align: center;
+    /* color: white; */
+    color: var(--text-color);
+}
+
+#facts {
+    margin-top: 20px;
+}
+
+.grow {
+	display: inline-block;
+	transition-duration: 0.3s; /* Reemplaza $defaultDuration con el valor deseado */
+	transition-property: transform;
+
+	/* hideTapHighlightColor */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	/* hardwareAccel */
+	transform: translateZ(0);
+
+	/* improveAntiAlias */
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.grow:hover {
+	transform: scale(1.03);
+}
+
+
+.fact-card-container {
+    border: none;
+    margin-top: 20px;
+    width: 90%;
+    height: 90px;
+    background-color: rgba(34, 33, 33, 0.5);
+    border-radius: 20px;
+    color: white;
+    /* color: var(--text-color); */
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.fact-card {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.fact-card-description {
+    margin: 0;
+    width: 50%;
+}
+
+.fact-card-description h2 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.fact-card-description p {
+    margin-top: 6px;
+    text-align: center;
+}
+
+
+.fact-card img {
+    height: 100px;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+
+/* nueva sección */
+#mis-proyectos h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+section {
+    margin: 50px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+   
+}
+
+.project-box-container, .experience-box-container, .about-me-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.project-box, .experience-box, .about-me-box {
+    
+    width: 80%; /* Toma todo el ancho disponible */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    text-align: center; /* Alineación del texto */
+    margin-bottom: 20px; /* Espacio entre boxes */
+    padding: 20px; /* Añade algo de padding dentro de la caja */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: rgba(44, 40, 40, 0.2); /* Fondo ligeramente transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: box-shadow 0.3s ease; /* Transición suave al pasar el mouse */
+    
+}
+
+
+.project-image, .experience-image, .about-me-image {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.project-box p, .experience-box p, .about-me-box p {
+    margin-top: 10px; /* Espacio entre el video y el texto */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: var(--text-color);
+    
+}
+
+
+.project-box iframe{ 
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+
+.project-box iframe:hover {
+    transform: scale(1.1); 
+}
+
+
+.about-me-box{
+    width: 80%; /* Toma todo el ancho disponible */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    text-align: center; /* Alineación del texto */
+    margin-bottom: 20px; /* Espacio entre boxes */
+    padding: 20px; /* Añade algo de padding dentro de la caja */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: rgba(44, 40, 40, 0.2); /* Fondo ligeramente transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: box-shadow 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.about-me-box p{
+
+    margin-top: 10px; /* Espacio entre el video y el texto */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.about-me-box img{
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+    width: 450px;
+    height: 290px;
+
+}
+
+
+
+.about-me-box img:hover{
+    transform: scale(1.1); 
+}
+
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    margin: 15% auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .caption {
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+  }
+
+/* .project-box:hover {
+    transform: scale(1.03);
+} */
+
+
+/*
+form h1{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
 
 
 h1 {
@@ -95,4 +465,4 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 10px 0;
-}
+} */

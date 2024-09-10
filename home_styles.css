@@ -1,0 +1,119 @@
+:root {
+    background: linear-gradient(to bottom right, rgb(115, 207, 250), rgb(1, 140, 204));
+    --text-color: #000000;
+    --accent-color: rgb(104, 104, 104, 0.4);
+}
+
+body.dark-theme {
+    background: linear-gradient(to bottom right, rgb(41, 1, 216), rgb(0, 118, 173));
+    --text-color: #ffffff;
+    --accent-color: rgb(59, 58, 59, 0.4);
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom right, #7cebff, #029aff) no-repeat fixed;
+    height: 100%;
+}
+
+/* header {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+} */
+
+
+
+nav button img {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+    width: 450px;
+    height: 290px;
+   
+
+}
+
+nav button {
+    border: none;
+    cursor: pointer;
+    padding: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+#home-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+}
+
+#home-intro h1 {
+    font-size: 100px;
+    color: var(--text-color);
+
+}
+
+#home-intro p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
+.button-container {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+#mocchi{
+    border-radius: 50%;
+}
+
+.btn {
+    background-color: #232ec7;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #7a43aa;
+}
+
+.grow {
+    display: inline-block;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.grow:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+}
